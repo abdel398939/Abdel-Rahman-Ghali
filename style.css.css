@@ -1,0 +1,345 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+
+font-family: 'poppins',sans-serif;
+margin: 0;
+padding: 0;
+box-sizing:border-box;
+scroll-behavior: smooth;
+}
+
+
+header
+{
+
+list-style: none;
+background-color: rgb(19, 1, 100);
+width: 100%;
+height:60px;
+position:fixed;
+z-index:999;
+display: flex;
+justify-content: space-between;
+align-items:center;
+padding:10px 200px;
+}
+
+.logo
+{
+text-decoration: none;
+color: rgb(4, 226, 226);
+text-transform: uppercase;
+font-weight: 600;
+font-size: 1.8em;
+display: flex
+}
+
+.navigation a
+{
+
+text-decoration: none;
+color: rgb(4, 226, 226);
+text-transform: uppercase;
+font-weight: 500;
+font-size: 1.1em;
+padding-left: 30px;
+}
+
+.navigation a:hover
+{
+color: rgb(154, 61, 240);
+}
+
+section
+{
+  padding: 100px 200px;
+}
+
+.main
+{
+width: 100%;
+min-height: 100vh;
+display: flex;
+align-items: center;
+background: url(images/bakgruond.png) no-repeat;
+background-size: cover;
+background-position: center center;
+background-attachment: fixed;
+}
+
+.main h2
+{
+color: aliceblue;
+font-size: 1.4em;
+font-weight: 500;
+}
+
+.main h2 span
+{
+    display: inline-block;
+    margin-top: 10px;
+  color: rgb(15, 209, 248);
+  font-size: 2.5em;
+  font-weight: 600;
+}
+.main h3
+{
+    color: aliceblue;
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+}
+.main-button
+{
+color: aliceblue;
+background-color: rgb(5, 31, 179);
+text-decoration: none;
+font-size: 1.1em;
+font-weight: 600;
+display: inline-block;
+margin-bottom: 40px;
+padding: 0.9375em 2.1875em;
+letter-spacing: 1px;
+border-radius: 15px;
+transition: 0.6s ease;
+}
+
+
+
+.main-button:hover
+{
+background-color: rgb(3, 9, 116);
+transform: scale(1.1,1);
+box-shadow: 0 7px 16px rgba(30, 30, 30, 0.3);  
+}
+
+.social-icons a
+{
+color:aliceblue;
+font-size: 1.7em;
+padding-right: 30px;
+}
+
+.title{
+
+  display: flex;
+  justify-content: center;
+  color: rgb(19, 1, 100);
+  font-size: 3.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.title1{
+
+  display: flex;
+  justify-content: center;
+  color:  rgb(15, 209, 248);
+ 
+  font-size: 3.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.content{
+   
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+.card{
+ 
+background-color: #fff;    
+border: 1px solid white;
+min-height:12em;
+width: 18em;
+box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+border-radius: 10px;
+margin: 15px;
+padding: 25px;
+transition: 0.7s ease;
+display: inline-block;
+}
+.content.info p{
+width: 20em;
+}
+
+.card:hover{
+
+transform: scale(1.1);
+
+
+}
+
+.icon{
+
+color:  rgb(19, 1, 100);
+font-size: 7em;
+text-align: center;
+}
+
+
+
+.info h3{
+
+  color:  rgb(19, 1, 100);
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+
+
+.project{
+  background-color:rgb(9, 0, 49); 
+  }
+
+  
+.project.content{
+  margin-top: 30px
+}
+.content{
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 15px;
+}
+.project-card{
+
+background-color: #fff;    
+border: 1px solid white;
+min-height:12em;
+width:18em;
+box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+border-radius: 10px;
+margin: 15px;
+padding: 25px;
+transition: 0.7s ease;
+display: inline-block;
+}
+
+.project-card:hover{
+transform: scale(1.1);
+
+}
+
+.project-card:hover .project-image{
+ 
+  opacity: 0.9;
+
+}
+.project-card img{
+width: 15em;
+height: 250px;
+}
+
+
+.project-info{
+
+  padding:1em ;
+}
+
+.project-category{
+
+  font-size: 0.8em;
+  color: black;
+}
+
+.spn{
+  font-size: 0.9em;
+}
+
+
+.project-title{
+
+display: flex;
+justify-content: space-between;
+text-transform: uppercase;
+margin-top: 10px;
+font-weight: 600;
+
+}
+
+.More-Details{
+ font-size: 0.8em;
+  text-decoration: none;
+color: rgb(3, 9, 116);
+
+
+}
+.More-Details:hover{
+
+color: blueviolet;
+
+
+}
+
+.content-contact
+{
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 15px;
+align-items: stretch;
+}
+
+.card-contact :hover{
+
+  opacity: 0.9;
+
+
+}
+
+.card-contact:hover{
+transform: scale(1.1);
+transition: 0.7s ease;
+}
+.card-contact{
+  
+background-color: #fff;    
+border: 1px solid white;
+flex: 1;
+display: flex;
+min-height: 14em;
+box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+border-radius: 10px;
+margin: 15px;
+padding: 25px;
+display: inline-block;
+flex-direction: column;
+
+}
+.icon{
+
+  width:2em;
+  text-align: center;
+
+}
+.footer{
+
+ background-color:rgb(9, 0, 49); 
+color: aliceblue;
+padding: 2em;
+display: flex;
+justify-content: space-between;
+}
+.footer-title{
+
+font-size: 1.3em;
+font-weight: 600;
+
+}
+
+.footer-title span{
+
+color:  rgb(15, 209, 248);
+
+}
