@@ -16,7 +16,7 @@ header
 {
 
 list-style: none;
-background-color: rgb(19, 1, 100);
+background-color: rgb(14, 2, 67);
 width: 100%;
 height:60px;
 position:fixed;
@@ -64,7 +64,7 @@ width: 100%;
 min-height: 100vh;
 display: flex;
 align-items: center;
-background: url(images/bakgruond.png) no-repeat;
+background: url(images/HHHH.png) no-repeat;
 background-size: cover;
 background-position: center center;
 background-attachment: fixed;
@@ -156,11 +156,11 @@ flex-wrap: wrap;
 
 .card{
  
-background-color: #fff;    
-border: 1px solid white;
+background-color: #d8d6d6;    
+border: 1px solid #d8d6d6;
 min-height:12em;
 width: 18em;
-box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+box-shadow: 0 5px 25px rgba(1 1 1 /35%);
 border-radius: 10px;
 margin: 15px;
 padding: 25px;
@@ -213,11 +213,11 @@ gap: 15px;
 }
 .project-card{
 
-background-color: #fff;    
-border: 1px solid white;
+background-color: #dad2d2;    
+border: 1px solid rgb(45, 43, 43);
 min-height:12em;
 width:18em;
-box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+box-shadow: 0 5px 25px rgba(104, 103, 103, 0.45);
 border-radius: 10px;
 margin: 15px;
 padding: 25px;
@@ -300,16 +300,16 @@ align-items: stretch;
 
 .card-contact:hover{
 transform: scale(1.1);
-transition: 0.7s ease;
+
 }
 .card-contact{
-  
-background-color: #fff;    
-border: 1px solid white;
+  transition: 0.7s ease;
+background-color: #d8d6d6;    
+border: 1px solid #d8d6d6;
 flex: 1;
 display: flex;
 min-height: 14em;
-box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+box-shadow: 0 5px 25px rgba(66, 65, 65, 0.35);
 border-radius: 10px;
 margin: 15px;
 padding: 25px;
@@ -343,4 +343,3 @@ font-weight: 600;
 color:  rgb(15, 209, 248);
 
 }
-
