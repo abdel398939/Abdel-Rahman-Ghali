@@ -386,3 +386,40 @@ color:  rgb(15, 209, 248);
     font-size: 1.5em;
   }
 }
+@media (max-width: 600px) {
+
+  /* ... الكود السابق (header, section, إلخ) يبقى كما هو ... */
+
+  /* التعديل الجديد لتصغير بوكس التواصل */
+  .content-contact {
+    /* إلغاء الـ flex-direction: row لجعله يتكدس عمودياً */
+    flex-direction: column; 
+    align-items: center; /* توسيط البوكسات */
+  }
+
+  .card-contact {
+    /* تقليل العرض بحيث لا يتجاوز عرض الشاشة */
+    width: 90%; 
+    min-height: auto; /* إلغاء الارتفاع الأدنى الثابت */
+    margin: 10px auto; /* توسيط البوكس وتقليل الهامش */
+    padding: 20px; /* تقليل الحشو الداخلي */
+  }
+}
+@media (max-width: 600px) {
+
+  /* ... الأكواد الأخرى تبقى كما هي ... */
+  
+  /* تكييف الـ Footer مع شاشة الجوال */
+  .footer {
+    flex-direction: column; /* جعل المحتوى يتكدس فوق بعضه */
+    text-align: center; /* توسيط النصوص */
+    gap: 10px; /* إضافة مسافة بين العناصر المتراصة */
+    padding: 1.5em; /* تقليل الحشو قليلاً */
+  }
+
+  /* تنسيق النصوص داخل الفوتر لتكون واضحة */
+  .footer-title {
+    font-size: 1.1em;
+  }
+}
+
