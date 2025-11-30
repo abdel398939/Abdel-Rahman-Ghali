@@ -342,10 +342,8 @@ color:  rgb(15, 209, 248);
 @media (max-width: 600px) {
   .main h2 span
 {
-    display: inline-block;
-    margin-top: 10px;
-  color: rgb(15, 209, 248);
-  font-size: 1.5em;
+  
+  font-size: 2em;
  
 }
   /* تقليل الحشو (Padding) في الهيدر */
@@ -424,6 +422,7 @@ color:  rgb(15, 209, 248);
     font-size: 1.1em;
   }
 }
+
 
 
 
