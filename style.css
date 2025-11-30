@@ -82,7 +82,7 @@ font-weight: 500;
     margin-top: 10px;
     color: rgb(15, 209, 248);
   font-size: 2em;
- font-weight:500;
+ font-weight:600;
 }
 .main h3
 {
@@ -383,7 +383,7 @@ color:  rgb(15, 209, 248);
   }
   
   .main h3 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
 @media (max-width: 600px) {
@@ -436,6 +436,7 @@ color:  rgb(15, 209, 248);
     /* overflow-wrap: break-word; */
   }
 }
+
 
 
 
