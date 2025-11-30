@@ -339,7 +339,7 @@ color:  rgb(15, 209, 248);
 }
 
 /* استعلام الوسائط: يطبق التنسيقات عندما يكون عرض الشاشة أقل من 1000 بكسل */
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
   .main h2 span
 {
     display: inline-block;
@@ -424,6 +424,7 @@ color:  rgb(15, 209, 248);
     font-size: 1.1em;
   }
 }
+
 
 
 
