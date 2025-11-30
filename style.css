@@ -428,3 +428,111 @@ color:  rgb(15, 209, 248);
   
 }
 }
+
+/* ====================================================== */
+/* 1. القاعدة الشاملة: تمنع أي عنصر من كسر حدود الشاشة */
+/* ====================================================== */
+body {
+    overflow-x: hidden;
+}
+
+/* ====================================================== */
+/* 2. الأجهزة اللوحية (Tablet) والشاشات المتوسطة (max-width: 1000px) */
+/* ====================================================== */
+@media (max-width: 1000px) {
+  
+  /* تقليل الحشو الهائل في الترويسة */
+  header {
+    padding: 10px 50px;
+  }
+
+  /* تقليل الحشو في جميع الأقسام */
+  section {
+    padding: 70px 30px;
+  }
+
+  /* تقليل المسافات بين الروابط */
+  .navigation a {
+    padding-left: 15px; 
+  }
+}
+
+
+/* ====================================================== */
+/* 3. الهواتف الذكية (Small Phones) (max-width: 600px) */
+/* ====================================================== */
+@media (max-width: 600px) {
+
+  /* تعديل الترويسة الرئيسية */
+  header {
+    padding: 10px 20px; 
+    flex-direction: column; /* تكديس عمودي */
+    height: auto; 
+    align-items: center;
+  }
+
+  /* إخفاء شريط التنقل الكبير */
+  .navigation {
+    display: none;
+  }
+  
+  /* تصغير حجم الخط الرئيسي ليلائم الجوال */
+  .main h2 span {
+    font-size: 1.8em; /* تم تعديله ليكون 1.8em (كان 2.5em) */
+  }
+  
+  .main h3 {
+    font-size: 1.3em; /* تم تعديله ليكون 1.3em (كان 2em) */
+  }
+
+  /* تعديل كروت التواصل (Phone/Email) */
+  .content-contact {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .card-contact {
+    width: 90%; /* نجعله يملأ الشاشة مع حشو بسيط */
+    min-height: auto; 
+    margin: 10px auto; 
+    padding: 20px; 
+  }
+
+  /* إصلاح مشكلة نص الإيميل (الخطأ الأصلي) */
+  .card-contact p {
+    /* تم حذف القياسات الخاطئة (font-size: 2em; margin: 20px; padding: 25px;) */
+    word-break: break-all; /* لكسر الإيميل الطويل */
+    font-size: 1em; /* حجم طبيعي */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* تكييف الـ Footer مع شاشة الجوال */
+  .footer {
+    flex-direction: column; /* تصحيح لجعله عمودياً */
+    text-align: center;
+    gap: 10px; 
+    padding: 1.5em;
+  }
+}
+
+/* ====================================================== */
+/* 4. الهواتف الصغيرة جداً (Ultra-Small Phones) (max-width: 420px) */
+/* ====================================================== */
+@media (max-width: 420px) {
+
+    /* تقليل كل الحشو والمسافات لأصغر حد ممكن */
+    header {
+        padding: 10px 5px; 
+    }
+
+    section {
+        padding: 40px 10px; /* أقل حشو أفقي */
+    }
+
+    /* ضمان أن كل البطاقات تملأ العرض */
+    .card, .project-card, .post-card, .card-contact {
+        width: 100%; 
+    }
+}
+
