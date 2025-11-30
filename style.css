@@ -340,12 +340,7 @@ color:  rgb(15, 209, 248);
 
 /* استعلام الوسائط: يطبق التنسيقات عندما يكون عرض الشاشة أقل من 1000 بكسل */
 @media (max-width: 600px) {
-  .main h2 span
-{
-  
-  font-size: 2em;
  
-}
   /* تقليل الحشو (Padding) في الهيدر */
   header {
     padding: 10px 50px; /* تقليل 200px إلى 50px */
@@ -422,6 +417,7 @@ color:  rgb(15, 209, 248);
     font-size: 1.1em;
   }
 }
+
 
 
 
