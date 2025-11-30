@@ -316,6 +316,7 @@ flex-direction: column;
   .card-contact p{
 
     word-break:break-all;
+    font-size:2em;
   }
 
   
@@ -437,4 +438,5 @@ color:  rgb(15, 209, 248);
   
 }
 }
+
 
