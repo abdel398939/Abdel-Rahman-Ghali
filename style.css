@@ -311,6 +311,15 @@ display: inline-block;
 flex-direction: column;
 
 }
+@media (max-width: 600px) {
+
+  .card-contact p{
+
+    word-break:break-all;
+  }
+
+  
+}
 .icon{
 
   width:2em;
@@ -428,3 +437,4 @@ color:  rgb(15, 209, 248);
   
 }
 }
+
