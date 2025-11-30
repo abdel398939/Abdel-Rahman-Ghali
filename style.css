@@ -75,7 +75,7 @@ background-attachment: fixed;
 {
     display: inline-block;
     margin-top: 10px;
-  color: rgb(15, 209, 248);
+  color: white;
   font-size: 1.5em;
  
 }
@@ -374,11 +374,11 @@ color:  rgb(15, 209, 248);
   
   /* تعديل حجم الخط الرئيسي ليتناسب مع الجوال */
   .main h2 span {
-    font-size: 1.5em;
+    font-size: 2em;
   }
   
   .main h3 {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 @media (max-width: 600px) {
@@ -417,6 +417,7 @@ color:  rgb(15, 209, 248);
     font-size: 1.1em;
   }
 }
+
 
 
 
