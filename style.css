@@ -107,7 +107,6 @@ padding: 0.9375em 2.1875em;
 letter-spacing: 1px;
 border-radius: 15px;
 transition: 0.6s ease;
-  padding-top:15px;
 }
 
 
@@ -312,18 +311,6 @@ display: inline-block;
 flex-direction: column;
 
 }
-@media (max-width: 600px) {
-
-  .card-contact p{
-
-    word-break:break-all;
-    font-size:2em;
-    margin: 20px;
-padding: 25px;
-  }
-
-  
-}
 .icon{
 
   width:2em;
@@ -441,7 +428,3 @@ color:  rgb(15, 209, 248);
   
 }
 }
-
-
-
-
