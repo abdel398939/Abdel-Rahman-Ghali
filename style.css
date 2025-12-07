@@ -285,7 +285,7 @@ color: blueviolet;
    
 /* ===== قسم أحدث المقالات ===== */
 .latest-articles {
-    background: #bebbbb;
+    background: #e7e6e6;
     padding: 40px 20px;
     margin-top: 40px;
     border-radius: 12px;
@@ -304,7 +304,8 @@ color: blueviolet;
 
 /* صندوق كل مقال */
 .article-preview {
-    background: #a49999ff;
+ 
+   background: rgb(196, 190, 190);
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -649,3 +650,4 @@ color:  rgb(15, 209, 248);
         font-size: 1.5em; /* تصغير حجم الخط من 1.7em إلى 1.5em */
     }
 }
+
