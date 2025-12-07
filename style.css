@@ -454,6 +454,7 @@ flex-direction: row;
 flex-wrap: wrap;
 gap: 15px;
 align-items: stretch;
+ text-align:center;
 }
 
 
@@ -474,6 +475,7 @@ margin: 15px;
 padding: 20px;
 display: inline-block;
 flex-direction: column;
+   text-align:center;
 
 }
 .icon{
@@ -650,5 +652,6 @@ color:  rgb(15, 209, 248);
         font-size: 1.5em; /* تصغير حجم الخط من 1.7em إلى 1.5em */
     }
 }
+
 
 
