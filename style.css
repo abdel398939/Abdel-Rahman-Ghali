@@ -597,11 +597,17 @@ color:  rgb(15, 209, 248);
     text-align: center; /* توسيط النصوص */
     gap: 10px; /* إضافة مسافة بين العناصر المتراصة */
     padding: 1.5em; /* تقليل الحشو قليلاً */
-  }
+ }  
+  
+  .icon{
+  width:2em;
+  text-align: center;
+}
+  
 
   /* تنسيق النصوص داخل الفوتر لتكون واضحة */
   .footer-title {
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
 }
 @media (max-width: 600px) {
@@ -653,6 +659,7 @@ color:  rgb(15, 209, 248);
         margin-top: 15px;
     }
 }
+
 
 
 
