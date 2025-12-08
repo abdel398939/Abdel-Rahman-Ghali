@@ -297,9 +297,15 @@ color: blueviolet;
 .latest-articles h2 {
     font-size: 33px;
     margin-bottom: 25px;
-color: blueviolet;
+color: rgb(3, 9, 116);
     text-align: right;
      padding-right:7px ;
+}
+
+.read-more a{
+
+color: rgb(3, 9, 116);
+  text-decoration: none;
 }
 
 /* صندوق كل مقال */
@@ -645,6 +651,7 @@ color:  rgb(15, 209, 248);
         margin-top: 15px;
     }
 }
+
 
 
 
