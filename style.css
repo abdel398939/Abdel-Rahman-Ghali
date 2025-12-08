@@ -583,6 +583,8 @@ color:  rgb(15, 209, 248);
     min-height: auto; /* إلغاء الارتفاع الأدنى الثابت */
     margin: 10px auto; /* توسيط البوكس وتقليل الهامش */
     padding: 20px; /* تقليل الحشو الداخلي */
+    font-size: 0.9em;
+    overflow-wrap: break-word;
   }
 }
 @media (max-width: 600px) {
@@ -651,6 +653,7 @@ color:  rgb(15, 209, 248);
         margin-top: 15px;
     }
 }
+
 
 
 
