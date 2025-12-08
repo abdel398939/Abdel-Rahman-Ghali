@@ -414,7 +414,7 @@ color: blueviolet;
 /* العناوين الفرعية (H2) */
 .article-body h2 {
     font-size: 1.6em;
-    color: #4f46e5;
+     color: rgb(19, 1, 100);
     margin-top: 35px;
     margin-bottom: 15px;
     border-right: 3px solid #4f46e5;
@@ -658,6 +658,7 @@ color:  rgb(15, 209, 248);
         font-size: 1.5em; /* تصغير حجم الخط من 1.7em إلى 1.5em */
     }
 }
+
 
 
 
