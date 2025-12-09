@@ -606,7 +606,12 @@ color:  rgb(15, 209, 248);
     padding: 1em; /* تقليل الحشو قليلاً */
  }  
   
+.social-icons{
 
+  flex-direction:column ; /* جعل المحتوى يتكدس فوق بعضه */
+    text-align: center; 
+  overflow-wrap: break-word; 
+}
 
   /* تنسيق النصوص داخل الفوتر لتكون واضحة */
   .footer-title {
@@ -670,6 +675,7 @@ color: rgb(3, 9, 116);
         margin-top: 15px;
     }
 }
+
 
 
 
