@@ -251,7 +251,7 @@ height: 250px;
   color: black;
 }
 
-.spn{
+.span{
   font-size: 0.9em;
 }
 
@@ -610,7 +610,7 @@ color:  rgb(15, 209, 248);
 
   /* تنسيق النصوص داخل الفوتر لتكون واضحة */
   .footer-title {
-    font-size: 1em;
+    font-size: 1.3em;
       overflow-wrap: break-word;
   }
 }
@@ -637,11 +637,11 @@ color: rgb(3, 9, 116);
 }
     
 .title h2{
- font-size: 1.5em;
+ font-size: 1em;
 }
     /*عنوان م */
     .latest-articles h2 {
-        font-size: 1.8em;
+        font-size: 1.5em;
         margin-bottom: 20px;
     }
 
@@ -670,6 +670,7 @@ color: rgb(3, 9, 116);
         margin-top: 15px;
     }
 }
+
 
 
 
