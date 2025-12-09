@@ -584,10 +584,15 @@ color:  rgb(15, 209, 248);
     min-height: auto; /* إلغاء الارتفاع الأدنى الثابت */
     margin: 10px auto; /* توسيط البوكس وتقليل الهامش */
     padding: 20px; /* تقليل الحشو الداخلي */
-    font-size: 0.8em;
+    font-size: 0.9em;
     overflow-wrap: break-word;
+   text-align:center;
+  }  
+  .icon{
+  width:3em;
+  text-align: center;
+}
   
-  }
 }
 @media (max-width: 600px) {
 
@@ -601,11 +606,7 @@ color:  rgb(15, 209, 248);
     padding: 1em; /* تقليل الحشو قليلاً */
  }  
   
-  .icon{
-  width:1.9em;
-  text-align: center;
-}
-  
+
 
   /* تنسيق النصوص داخل الفوتر لتكون واضحة */
   .footer-title {
@@ -667,6 +668,7 @@ color: rgb(3, 9, 116);
         margin-top: 15px;
     }
 }
+
 
 
 
