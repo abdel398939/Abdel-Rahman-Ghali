@@ -610,7 +610,7 @@ color:  rgb(15, 209, 248);
 
   /* تنسيق النصوص داخل الفوتر لتكون واضحة */
   .footer-title {
-    font-size: 1.5em;
+    font-size: 1em;
       overflow-wrap: break-word;
   }
 }
@@ -668,6 +668,7 @@ color: rgb(3, 9, 116);
         margin-top: 15px;
     }
 }
+
 
 
 
