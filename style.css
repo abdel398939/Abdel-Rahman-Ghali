@@ -580,7 +580,7 @@ color:  rgb(15, 209, 248);
 
   .card-contact {
     /* تقليل العرض بحيث لا يتجاوز عرض الشاشة */
-    width: 80%; 
+    width: 85%; 
     min-height: auto; /* إلغاء الارتفاع الأدنى الثابت */
     margin: 10px auto; /* توسيط البوكس وتقليل الهامش */
     padding: 20px; /* تقليل الحشو الداخلي */
@@ -609,7 +609,7 @@ color:  rgb(15, 209, 248);
 
   /* تنسيق النصوص داخل الفوتر لتكون واضحة */
   .footer-title {
-    font-size: 1em;
+    font-size: 1.5em;
       overflow-wrap: break-word;
   }
 }
@@ -629,7 +629,7 @@ color:  rgb(15, 209, 248);
     /* تقليل الحشو والمسافات العامة للقسم */
     .latest-articles {
         padding: 30px 15px; /* تقليل الحشو الأفقي */
-      font-size: 25px;
+      font-size: 1;
     margin-bottom: 25px;
 color: rgb(3, 9, 116);
     
@@ -638,7 +638,7 @@ color: rgb(3, 9, 116);
 
     /* عنوان القسم */
     .latest-articles h2 {
-        font-size: 22px;
+        font-size: 1.8em;
         margin-bottom: 20px;
     }
 
@@ -667,6 +667,7 @@ color: rgb(3, 9, 116);
         margin-top: 15px;
     }
 }
+
 
 
 
