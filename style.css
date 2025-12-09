@@ -558,7 +558,7 @@ color:  rgb(15, 209, 248);
   
   /* تعديل حجم الخط الرئيسي ليتناسب مع الجوال */
   .main h2 span {
-    font-size: 1ز5em;
+    font-size: 1.5em;
   }
   
   .main h3 {
@@ -636,8 +636,10 @@ color: rgb(3, 9, 116);
     
 }
     
-
-    /* عنوان القسم */
+.title h1{
+ font-size: 1.5em;
+}
+    /*عنوان م */
     .latest-articles h2 {
         font-size: 1.8em;
         margin-bottom: 20px;
