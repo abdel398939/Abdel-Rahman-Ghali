@@ -11,6 +11,11 @@ box-sizing:border-box;
 scroll-behavior: smooth;
 }
 
+body{
+
+overflow-x:hidden;
+  
+}
 
 header
 {
@@ -580,7 +585,7 @@ color:  rgb(15, 209, 248);
 
   .card-contact {
     /* تقليل العرض بحيث لا يتجاوز عرض الشاشة */
-    width: 85%; 
+    width: 80%; 
     min-height: auto; /* إلغاء الارتفاع الأدنى الثابت */
     margin: 10px auto; /* توسيط البوكس وتقليل الهامش */
     padding: 20px; /* تقليل الحشو الداخلي */
@@ -589,8 +594,10 @@ color:  rgb(15, 209, 248);
    text-align:center;
   }  
   .icon{
-  width:2.5em;
+  width:2em;
   text-align: center;
+     align-items: center; /* توسيط البوكسات */ 
+    
 }
   
 }
@@ -675,6 +682,7 @@ color: rgb(3, 9, 116);
         margin-top: 15px;
     }
 }
+
 
 
 
