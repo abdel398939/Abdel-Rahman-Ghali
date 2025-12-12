@@ -648,8 +648,8 @@ color: rgb(3, 9, 116);
     
 }
     
-.title h2{
- font-size: 1em;
+.blog-main-content .title h2{
+ font-size: 1.5em;
 }
     /*عنوان م */
     .latest-articles h2 {
@@ -682,6 +682,7 @@ color: rgb(3, 9, 116);
         margin-top: 15px;
     }
 }
+
 
 
 
