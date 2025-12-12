@@ -532,7 +532,7 @@ color:  rgb(15, 209, 248);
 
   /* تقليل الحشو (Padding) في كل الأقسام (sections) */
   section {
-    padding: 70px 30px; /* تقليل 200px إلى 30px لتوفير مساحة */
+    padding: 70px 20px; /* تقليل 200px إلى 30px لتوفير مساحة */
   }
 
   /* تعديل الناف بار ليكون أكثر استجابة */
@@ -589,7 +589,7 @@ color:  rgb(15, 209, 248);
    text-align:center;
   }  
   .icon{
-  width:3em;
+  width:2.5em;
   text-align: center;
 }
   
@@ -608,7 +608,7 @@ color:  rgb(15, 209, 248);
   
 .social-icons{
 
-  flex-direction:column ; /* جعل المحتوى يتكدس فوق بعضه */
+  flex-direction:rwo ; /* جعل المحتوى يتكدس فوق بعضه */
     text-align: center; 
   overflow-wrap: break-word; 
 }
@@ -675,6 +675,7 @@ color: rgb(3, 9, 116);
         margin-top: 15px;
     }
 }
+
 
 
 
