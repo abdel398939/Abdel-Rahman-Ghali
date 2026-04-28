@@ -904,7 +904,122 @@ color: rgb(3, 9, 116);
         height: 150px;
     }
 }
+/* تنسيق حاوية المقال */
+.single-article-container {
+    background: #fff;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
 
+.article-hero {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.article-hero h1 {
+    font-size: 2.8rem;
+    max-width: 800px;
+    margin: 20px 0;
+    line-height: 1.4;
+}
+
+.category-badge {
+    background: var(--primary-color, #6a0dad);
+    padding: 5px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+}
+
+/* جسم المقال */
+.article-content-wrapper {
+    max-width: 800px;
+    margin: -60px auto 0; /* لرفع المحتوى فوق صورة الهيرو قليلاً */
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.article-body {
+    font-size: 1.15rem;
+    line-height: 2;
+    color: #333;
+}
+
+.intro-text {
+    font-size: 1.3rem;
+    color: #555;
+    border-right: 5px solid #6a0dad;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+
+/* صندوق النصائح */
+.tip-box {
+    background: #f8f4ff;
+    border-right: 5px solid #6a0dad;
+    padding: 20px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tip-box i { color: #6a0dad; font-size: 1.5rem; }
+
+/* القائمة المنسقة */
+.styled-list {
+    list-style: none;
+    padding: 0;
+}
+
+.styled-list li {
+    margin-bottom: 20px;
+    padding-right: 30px;
+    position: relative;
+}
+
+.styled-list li::before {
+    content: '✔';
+    position: absolute;
+    right: 0;
+    color: #6a0dad;
+    font-weight: bold;
+}
+
+/* الاقتباسات */
+blockquote {
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 40px 0;
+    color: #6a0dad;
+    font-weight: bold;
+}
+
+.article-footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.share-article i {
+    margin-right: 15px;
+    font-size: 1.2rem;
+    color: #555;
+    transition: 0.3s;
+}
+
+.share-article i:hover { color: #6a0dad; }
 
 
 
