@@ -778,7 +778,132 @@ color: rgb(3, 9, 116);
         margin-top: 15px;
     }
 }
+/* تنسيق حاوية المدونة */
+.blog-container {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
 
+.blog-main-title {
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.blog-main-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #6a0dad; /* لونك المفضل */
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* بطاقة المقال المذهلة */
+.post-card {
+    display: flex;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(106, 13, 173, 0.1);
+}
+
+.post-image-placeholder {
+    width: 30%;
+    background: linear-gradient(45deg, #6a0dad, #a252ee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.post-info {
+    padding: 30px;
+    width: 70%;
+}
+
+.category-tag {
+    background: rgba(106, 13, 173, 0.1);
+    color: #6a0dad;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.post-info h2 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.post-info h2 a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.post-info h2 a:hover {
+    color: #6a0dad;
+}
+
+.summary {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 15px;
+}
+
+.date {
+    color: #999;
+    font-size: 0.85rem;
+}
+
+.read-more-btn {
+    text-decoration: none;
+    color: #6a0dad;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.read-more-btn:hover {
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+}
+
+/* التجاوب مع الجوال */
+@media (max-width: 768px) {
+    .post-card {
+        flex-direction: column;
+    }
+    .post-image-placeholder, .post-info {
+        width: 100%;
+    }
+    .post-image-placeholder {
+        height: 150px;
+    }
+}
 
 
 
