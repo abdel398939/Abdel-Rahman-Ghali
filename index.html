@@ -4,37 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abdelrahman Ghali | Digital Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#08111f;--card:#101b2d;--line:#22314d;--pri:#4f7cff;--text:#eef4ff;--muted:#9fb0cf}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:Cairo,Inter,sans-serif;background:var(--bg);color:var(--text)}
-a{text-decoration:none;color:inherit}
-.container{width:min(1100px,92%);margin:auto}
-
-/* NAV */
-.nav{
-position:fixed;
-top:0;
-width:100%;
-z-index:1000;
-background:rgba(8,17,31,.75);
-backdrop-filter:blur(12px);
-border-bottom:1px solid rgba(255,255,255,.06);
-transition:.3s;
-}
-.nav.scrolled{
-box-shadow:0 10px 30px rgba(0,0,0,.45);
-background:rgba(8,17,31,.95);
-}
-.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
-.logo{font-weight:800;font-size:1.2rem}
-.logo span{color:var(--pri)}
-.menu{display:flex;gap:18px;align-items:center}
-.menu a{color:var(--muted);position:relative;padding:6px 0;transition:.3s}
-.menu a:hover{color:#fff}
-.menu a.active{color:#fff}
+:root{--bg:#08111f;--card:#101b2d;--line:#22314d;--pri:#4f7cff;--sec:#10b981;--text:#eef4ff;--muted:#9fb0cf}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:Cairo,Inter,sans-serif;background:radial-gradient(circle at top right,#132342,transparent 30%),var(--bg);color:var(--text)}a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}.nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(8,17,31,.72);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06)}.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:16px 0}.logo{font-weight:800;font-size:1.35rem}.logo span{color:var(--pri)}.menu{display:flex;gap:24px}.menu a{color:var(--muted)}.menu a:hover{color:#fff}.btn{padding:12px 22px;border-radius:12px;background:var(--pri);display:inline-block;font-weight:700;transition:.3s}.btn:hover{transform:translateY(-3px)}.btn-outline{background:transparent;border:1px solid var(--line)}section{padding:90px 0}.hero{min-height:100vh;display:grid;place-items:center;padding-top:90px}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}.tag{display:inline-block;padding:8px 14px;border:1px solid var(--line);border-radius:999px;color:#b9c7e3;margin-bottom:18px}.hero h1{font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.15;margin-bottom:16px}.hero p{color:var(--muted);font-size:1.08rem;max-width:620px}.actions{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}.card{background:linear-gradient(180deg,#13203a,#0d1728);border:1px solid rgba(255,255,255,.06);border-radius:24px;padding:28px;box-shadow:0 20px 40px rgba(0,0,0,.25)}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.stat{padding:20px;border-radius:18px;background:#0b1526;border:1px solid var(--line)}.stat h3{font-size:2rem;color:var(--pri)}.title{text-align:center;font-size:2.2rem;margin-bottom:14px}.sub{text-align:center;color:var(--muted);max-width:700px;margin:0 auto 42px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.service h3,.project h3{margin:12px 0}.muted{color:var(--muted)}.project img{width:100%;height:220px;object-fit:cover;border-radius:18px}.cta{text-align:center}.footer{padding:28px 0;border-top:1px solid rgba(255,255,255,.06);color:var(--muted)}.fade{opacity:0;transform:translateY(24px);animation:fade .8s forwards}.fade:nth-child(2){animation-delay:.15s}.fade:nth-child(3){animation-delay:.3s}@keyframes fade{to{opacity:1;transform:none}}@media(max-width:900px){.hero-grid,.grid-3{grid-template-columns:1fr}.menu{display:none}.hero{text-align:center}.actions{justify-content:center}} </style>
+</head>
+<body>
+<nav class="nav"><div class="container nav-inner"><a class="logo" href="#home">AG<span>.</span></a><div class="menu"><a href="#services">الخدمات</a><a href="#projects">المشاريع</a><a href="#contact">تواصل</a><a href="#" id="langToggle">EN</a></div></div></nav>
+<section class="hero" id="home"><div class="container hero-grid"><div><span class="tag fade">مطور أنظمة | حلول رقمية للشركات</span><h1 class="fade">نبني حضورًا رقميًا يليق <br>بشركتك</h1><p class="fade">تصميم مواقع شركات، أنظمة داخلية، هويات مؤسسية، وتجارب رقمية احترافية مناسبة لسوق الخليج والشركات الطموحة.</p><div class="actions fade"><a href="#projects" class="btn">عرض الأعمال</a><a href="#contact" class="btn btn-outline">اطلب استشارة</a></div></div><div class="card fade"><div class="stats"><div class="stat"><h3>UI</h3><p>واجهات حديثة</p></div><div class="stat"><h3>MIS</h3><p>تحليل أنظمة</p></div><div class="stat"><h3>B2B</h3><p>حلول شركات</p></div><div class="stat"><h3>24/7</h3><p>دعم ومرونة</p></div></div></div></div></section>
+<section id="services"><div class="container"><h2 class="title">الخدمات</h2><p class="sub">خدمات مركزة على النتائج، لا مجرد تصميم شكلي.</p><div class="grid-3"><div class="card service"><h3>تطوير المواقع</h3><p class="muted">Corporate websites, landing pages, e-commerce stores.</p></div><div class="card service"><h3>الهوية المؤسسية</h3><p class="muted">Profiles, branding systems, premium visual presence.</p></div><div class="card service"><h3>أنظمة الأعمال</h3><p class="muted">HR systems, dashboards, workflow automation.</p></div></div></div></section>
+<section id="projects"><div class="container"><h2 class="title">مشاريع مختارة</h2><p class="sub">نماذج توضح مستوى التنفيذ والجودة.</p><div class="grid-3"><div class="card project"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt=""><h3>AMTC Corporate Site</h3><p class="muted">موقع احترافي لشركة أعمال وخدمات.</p></div><div class="card project"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt=""><h3>HR Dashboard</h3><p class="muted">نظام موارد بشرية وتحليلات.</p></div><div class="card project"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800" alt=""><h3>E-Commerce</h3><p class="muted">متجر إلكتروني وتجربة بيع متكاملة.</p></div></div></div></section>
+<section id="contact"><div class="container cta"><h2 class="title">جاهز لتطوير شركتك؟</h2><p class="sub">ابدأ محادثة مباشرة لبحث مشروعك القادم.</p><div class="actions" style="justify-content:center"><a class="btn" href="https://wa.me/962786610095">WhatsApp</a><a class="btn btn-outline" href="mailto:abdarhmanghali998@gmail.com">Email</a></div></div></section>
+<footer class="footer"><div class="container">© 2026 Abdelrahman Ghali — Digital Solutions</div></footer>
+<script>
+const data={ar:{services:'الخدمات',projects:'المشاريع',contact:'تواصل',heroTag:'مطور أنظمة | حلول رقمية للشركات',heroTitle:'نبني حضورًا رقميًا يليق <br>بشركتك',heroText:'تصميم مواقع شركات، أنظمة داخلية، هويات مؤسسية، وتجارب رقمية احترافية مناسبة لسوق الخليج والشركات الطموحة.',show:'عرض الأعمال',consult:'اطلب استشارة'},en:{services:'Services',projects:'Projects',contact:'Contact',heroTag:'Systems Developer | Digital Solutions for Companies',heroTitle:'We Build a Digital Presence <br>Worth Your Brand',heroText:'Corporate websites, internal systems, premium identities, and professional digital experiences for ambitious businesses.',show:'View Projects',consult:'Book Consultation'}};
+let lang='ar';
+const toggle=document.getElementById('langToggle');
+const menu=document.querySelectorAll('.menu a');
+const tag=document.querySelector('.tag');
+const h1=document.querySelector('.hero h1');
+const p=document.querySelector('.hero p');
+const btns=document.querySelectorAll('.actions a');
+function setLang(l){lang=l;document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';toggle.textContent=l==='ar'?'EN':'AR';menu[0].textContent=data[l].services;menu[1].textContent=data[l].projects;menu[2].textContent=data[l].contact;tag.innerHTML=data[l].heroTag;h1.innerHTML=data[l].heroTitle;p.innerHTML=data[l].heroText;btns[0].textContent=data[l].show;btns[1].textContent=data[l].consult;document.body.style.fontFamily=l==='ar'?'Cairo,Inter,sans-serif':'Inter,Cairo,sans-serif';}
+toggle.addEventListener('click',e=>{e.preventDefault();setLang(lang==='ar'?'en':'ar');});
+</script></body></html>.menu a.active{color:#fff}
 .menu a.active::after,
 .menu a::after{
 content:'';
