@@ -28,13 +28,7 @@ const p=document.querySelector('.hero p');
 const btns=document.querySelectorAll('.actions a');
 function setLang(l){lang=l;document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';toggle.textContent=l==='ar'?'EN':'AR';menu[0].textContent=data[l].services;menu[1].textContent=data[l].projects;menu[2].textContent=data[l].contact;tag.innerHTML=data[l].heroTag;h1.innerHTML=data[l].heroTitle;p.innerHTML=data[l].heroText;btns[0].textContent=data[l].show;btns[1].textContent=data[l].consult;document.body.style.fontFamily=l==='ar'?'Cairo,Inter,sans-serif':'Inter,Cairo,sans-serif';}
 toggle.addEventListener('click',e=>{e.preventDefault();setLang(lang==='ar'?'en':'ar');});
-</script></body></html>.menu a.active{color:#fff}
-.menu a.active::after,
-.menu a::after{
-content:'';
-position:absolute;
-bottom:0;left:0;
-height:2px;
+</script></body></html>height:2px;
 width:0;
 background:var(--pri);
 transition:.3s;
