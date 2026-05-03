@@ -2,22 +2,20 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Abdelrahman Ghali | Digital Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-     <link rel="stylesheet" href="style.css">
     
-    
-    
+  
 </head>
 <body>
 
 <nav class="nav">
     <div class="container nav-inner">
-        <a class="logo" href="#home" data-translate="logo">AG</a>
+        <a class="logo" href="#home" data-translate="logo">AG<span>.</span></a>
         <div class="menu">
             <a href="#services" data-translate="navServices">الخدمات</a>
             <a href="#projects" data-translate="navProjects">المشاريع</a>
@@ -27,15 +25,20 @@
     </div>
 </nav>
 
+<!-- زر اللغة للجوال -->
+<button id="mobileLangBtn" class="mobile-lang-btn">
+    🌐 English
+</button>
+
 <section class="hero" id="home">
     <div class="container hero-grid">
         <div data-aos="fade-left">
             <span class="tag">
                 <span style="width:8px; height:8px; background:var(--sec); border-radius:50%; display:inline-block"></span>
-                <span data-translate="locationTag">مقرنا: الاردن،عمان - نخدم العالم</span>
+                <span data-translate="locationTag">مقرنا: الفوار، الخليل - نخدم العالم</span>
             </span>
             <h1><span data-translate="heroTitle1">نبني حضورًا رقميًا</span> <br><span style="color:var(--pri)"><span data-translate="heroTitle2">يليق بطموحك</span></span></h1>
-            <p data-translate="heroDesc">، نقدم أحدث حلول تطوير الأنظمة وتصميم المواقع للشركات التي تبحث عن التميز والاحترافية في الشرق الأوسط</p>
+            <p data-translate="heroDesc">من قلب الفوار، نقدم أحدث حلول تطوير الأنظمة وتصميم المواقع للشركات التي تبحث عن التميز والاحترافية في الشرق الأوسط.</p>
             <div class="actions" style="display:flex; gap:15px; margin-top:35px;">
                 <a href="#projects" class="btn" data-translate="viewWorkBtn">عرض أعمالي</a>
                 <a href="#contact" class="btn btn-outline" data-translate="freeConsultBtn">استشارة مجانية</a>
@@ -139,38 +142,24 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-    // تشغيل مكتبة الأنميشن
-    AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 100
-    });
+    AOS.init({ duration: 1000, once: true, offset: 100 });
 
-    // ============= نظام الترجمة المتكامل =============
-    
-    // قاموس الترجمة الكامل
+    // قاموس الترجمة
     const translations = {
-        // الهيدر والقائمة
         'logo': { ar: 'AG<span>.</span>', en: 'AG<span>.</span>' },
         'navServices': { ar: 'الخدمات', en: 'Services' },
         'navProjects': { ar: 'المشاريع', en: 'Projects' },
         'navContact': { ar: 'تواصل', en: 'Contact' },
-        
-        // قسم الهيرو
-        'locationTag': { ar: 'مقرنا: الاردن،عمان - نخدم العالم', en: 'Based in: Al Fawwar, Hebron - Serving Globally' },
+        'locationTag': { ar: 'مقرنا: الفوار، الخليل - نخدم العالم', en: 'Based in: Al Fawwar, Hebron - Serving Globally' },
         'heroTitle1': { ar: 'نبني حضورًا رقميًا', en: 'Building a Digital Presence' },
         'heroTitle2': { ar: 'يليق بطموحك', en: 'That Fits Your Ambition' },
-        'heroDesc': { ar: ' نقدم أحدث حلول تطوير الأنظمة وتصميم المواقع للشركات التي تبحث عن التميز والاحترافية في الشرق الأوسط', en: 'From the heart of Al Fawwar, we deliver cutting-edge system development and website design solutions for businesses seeking excellence and professionalism in the Middle East.' },
+        'heroDesc': { ar: 'من قلب الفوار، نقدم أحدث حلول تطوير الأنظمة وتصميم المواقع للشركات التي تبحث عن التميز والاحترافية في الشرق الأوسط.', en: 'From the heart of Al Fawwar, we deliver cutting-edge system development and website design solutions for businesses seeking excellence and professionalism in the Middle East.' },
         'viewWorkBtn': { ar: 'عرض أعمالي', en: 'View My Work' },
         'freeConsultBtn': { ar: 'استشارة مجانية', en: 'Free Consultation' },
-        
-        // الإحصائيات
         'stat1': { ar: 'مشروع ناجح', en: 'Successful Projects' },
         'stat2': { ar: 'تصميم مذهل', en: 'Stunning Design' },
         'stat3': { ar: 'حلول تقنية', en: 'Tech Solutions' },
         'stat4': { ar: 'دعم مستمر', en: '24/7 Support' },
-        
-        // قسم الخدمات
         'servicesTitle': { ar: 'خدمات متكاملة', en: 'Integrated Services' },
         'servicesSub': { ar: 'نحول الأفكار المعقدة إلى واجهات بسيطة وأنظمة قوية.', en: 'We turn complex ideas into simple interfaces and powerful systems.' },
         'service1Title': { ar: 'تطوير المواقع', en: 'Web Development' },
@@ -179,8 +168,6 @@
         'service2Desc': { ar: 'تصميم شعارات وبروفايلات شركات تعكس القوة والمصداقية لعلامتك التجارية.', en: 'Logo design and corporate profiles that reflect strength and credibility for your brand.' },
         'service3Title': { ar: 'أتمتة الأعمال', en: 'Business Automation' },
         'service3Desc': { ar: 'بناء أنظمة داخلية (Dashboards) لإدارة الموظفين والعمليات والمبيعات بكفاءة.', en: 'Building internal systems (Dashboards) to efficiently manage employees, operations, and sales.' },
-        
-        // قسم المشاريع
         'projectsTitle': { ar: 'أحدث المشاريع', en: 'Latest Projects' },
         'projectsSub': { ar: 'جودة التنفيذ هي عنواننا في كل مشروع نلتزم به.', en: 'Execution quality is our hallmark in every project we undertake.' },
         'project1Badge': { ar: 'الاردن', en: 'Jordan' },
@@ -193,30 +180,24 @@
         'project3Title': { ar: 'Premium E-Shop', en: 'Premium E-Shop' },
         'project3Desc': { ar: 'متجر إلكتروني متوافق مع جميع الشاشات وبوابات الدفع.', en: 'E-commerce store compatible with all screens and payment gateways.' },
         'visitBtn': { ar: 'زيارة الموقع', en: 'Visit Website' },
-        
-        // قسم التواصل
         'ctaTitle': { ar: 'هل لديك مشروع طموح؟', en: 'Do You Have an Ambitious Project?' },
         'ctaText': { ar: 'أنا متواجد حالياً في', en: 'I am currently in' },
         'locationName': { ar: 'الفوار', en: 'Al Fawwar' },
         'ctaText2': { ar: '، ومستعد لمناقشة مشروعك القادم وجهاً لوجه أو عبر الإنترنت.', en: ', ready to discuss your next project in person or online.' },
         'whatsappBtn': { ar: 'واتساب مباشر', en: 'WhatsApp Direct' },
         'emailBtn': { ar: 'البريد الإلكتروني', en: 'Email' },
-        
-        // التذييل
         'copyright': { ar: '© 2026 عبد الرحمن غالي — الفوار، فلسطين. جميع الحقوق محفوظة.', en: '© 2026 Abdelrahman Ghali — Al Fawwar, Palestine. All Rights Reserved.' }
     };
     
-    // الحالة الحالية
     let currentLanguage = localStorage.getItem('websiteLang') || 'ar';
+    const langBtn = document.getElementById('langToggle');
+    const mobileLangBtn = document.getElementById('mobileLangBtn');
     
-    // دالة ترجمة الصفحة بالكامل
     function translatePage() {
-        // ترجمة جميع العناصر التي تحمل خاصية data-translate
         document.querySelectorAll('[data-translate]').forEach(element => {
             const key = element.getAttribute('data-translate');
             if (translations[key] && translations[key][currentLanguage]) {
                 if (key === 'logo') {
-                    // للوجو يحتوي على HTML
                     element.innerHTML = translations[key][currentLanguage];
                 } else {
                     element.textContent = translations[key][currentLanguage];
@@ -225,7 +206,6 @@
         });
     }
     
-    // دالة تغيير اتجاه الصفحة
     function setPageDirection() {
         const htmlTag = document.documentElement;
         if (currentLanguage === 'ar') {
@@ -239,39 +219,29 @@
         }
     }
     
-    // دالة تبديل اللغة
     function toggleLanguage() {
         currentLanguage = currentLanguage === 'ar' ? 'en' : 'ar';
         localStorage.setItem('websiteLang', currentLanguage);
         
-        // تغيير نص الزر
-        const langBtn = document.getElementById('langToggle');
         if (langBtn) {
             langBtn.innerHTML = currentLanguage === 'ar' ? '🌐 English' : '🌐 العربية';
         }
+        if (mobileLangBtn) {
+            mobileLangBtn.innerHTML = currentLanguage === 'ar' ? '🌐 English' : '🌐 العربية';
+        }
         
-        // تغيير الاتجاه
         setPageDirection();
-        
-        // ترجمة الصفحة
         translatePage();
     }
     
-    // ربط زر الترجمة
-    const langToggleBtn = document.getElementById('langToggle');
-    if (langToggleBtn) {
-        langToggleBtn.addEventListener('click', toggleLanguage);
-    }
+    if (langBtn) langBtn.addEventListener('click', toggleLanguage);
+    if (mobileLangBtn) mobileLangBtn.addEventListener('click', toggleLanguage);
     
-    // تطبيق اللغة المحفوظة عند تحميل الصفحة
     setPageDirection();
     translatePage();
     
-    // تحديث نص الزر
-    if (langToggleBtn) {
-        langToggleBtn.innerHTML = currentLanguage === 'ar' ? '🌐 English' : '🌐 العربية';
-    }
+    if (langBtn) langBtn.innerHTML = currentLanguage === 'ar' ? '🌐 English' : '🌐 العربية';
+    if (mobileLangBtn) mobileLangBtn.innerHTML = currentLanguage === 'ar' ? '🌐 English' : '🌐 العربية';
 </script>
-
 </body>
 </html>
