@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrahman Ghali | Digital Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <style>
+        :root {
+            --bg: #050a14;
+            --card: rgba(16, 27, 45, 0.7);
+            --line: #22314d;
+            --pri: #4f7cff;
+            --sec: #10b981;
+            --text: #eef4ff;
+            --muted: #9fb0cf;
+            --glow: rgba(79, 124, 255, 0.15);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: Cairo, Inter, sans-serif; 
+            background: var(--bg); 
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        /* خلفية متحركة خفيفة */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% 50%, #132342 0%, transparent 50%);
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .container { width: min(1180px, 92%); margin: auto; }
+
+        /* Navbar */
+        .nav { 
+            position: fixed; top: 0; width: 100%; z-index: 1000; 
+            background: rgba(8, 17, 31, 0.8); backdrop-filter: blur(15px); 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08); 
+        }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; }
+        .logo { font-weight: 800; font-size: 1.5rem; letter-spacing: -1px; }
+        .logo span { color: var(--pri); }
+        .menu { display: flex; gap: 30px; }
+        .menu a { color: var(--muted); font-weight: 600; transition: 0.3s; }
+        .menu a:hover { color: var(--pri); }
+
+        /* Buttons */
+        .btn { 
+            padding: 14px 28px; border-radius: 12px; background: var(--pri); 
+            display: inline-block; font-weight: 700; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 15px rgba(79, 124, 255, 0.3);
+        }
+        .btn:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(79, 124, 255, 0.4); }
+        .btn-outline { background: transparent; border: 1px solid var(--line); box-shadow: none; }
+
+        /* Hero Section */
+        section { padding: 100px 0; }
+        .hero { min-height: 100vh; display: flex; align-items: center; padding-top: 80px; }
+        .hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: center; }
+        .tag { 
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 8px 16px; border: 1px solid var(--line); 
+            border-radius: 999px; color: var(--pri); background: rgba(79, 124, 255, 0.05);
+            margin-bottom: 24px; font-weight: 600; font-size: 0.9rem;
+        }
+        .hero h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.1; margin-bottom: 20px; font-weight: 800; }
+        .hero p { color: var(--muted); font-size: 1.15rem; max-width: 580px; line-height: 1.7; }
+        
+        /* Stats Card Interaction */
+        .card { 
+            background: var(--card); border: 1px solid rgba(255, 255, 255, 0.08); 
+            border-radius: 28px; padding: 30px; backdrop-filter: blur(10px);
+            transition: 0.4s ease;
+        }
+        .card:hover { border-color: var(--pri); transform: scale(1.02); }
+        .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .stat { 
+            padding: 25px; border-radius: 20px; background: rgba(5, 10, 20, 0.5); 
+            border: 1px solid var(--line); text-align: center;
+            transition: 0.3s;
+        }
+        .stat:hover { background: var(--pri); }
+        .stat:hover h3, .stat:hover p { color: white; }
+        .stat h3 { font-size: 2.2rem; color: var(--pri); margin-bottom: 5px; }
+
+        /* Section Titles */
+        .title { text-align: center; font-size: 2.5rem; margin-bottom: 15px; font-weight: 800; }
+        .sub { text-align: center; color: var(--muted); max-width: 600px; margin: 0 auto 50px; font-size: 1.1rem; }
+
+        /* Projects Grid & Hover */
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .project-card { 
+            position: relative; overflow: hidden; border-radius: 24px; 
+            background: var(--card); border: 1px solid var(--line);
+            transition: 0.5s;
+        }
+        .project-img-wrapper { overflow: hidden; border-radius: 20px; margin: 12px; position: relative; }
+        .project-card img { 
+            width: 100%; height: 240px; object-fit: cover; transition: 0.6s; 
+        }
+        .project-card:hover img { transform: scale(1.1) rotate(2deg); }
+        .project-info { padding: 0 25px 25px 25px; }
+        .project-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.4); border-color: var(--pri); }
+
+        /* Location Badge (الفوار) */
+        .location-badge {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--sec);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Contact Section */
+        .cta-box {
+            background: linear-gradient(135deg, var(--pri), #2a52be);
+            padding: 60px;
+            border-radius: 35px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-box h2 { font-size: 2.5rem; color: white; }
+        .cta-box .sub { color: rgba(255, 255, 255, 0.8); }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .hero-grid, .grid-3 { grid-template-columns: 1fr; }
+            .hero { text-align: center; }
+            .hero p { margin: 0 auto; }
+            .actions { justify-content: center; }
+            .menu { display: none; }
+        }
+        .project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary); /* اللون الأسود */
+    color: #b0b1c1;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 1px solid var(--primary);
+}
+
+.project-link:hover {
+    background-color: transparent;
+    color: var(--primary);
+}
+    </style>
+</head>
+<body>
+
+<nav class="nav">
+    <div class="container nav-inner">
+        <a class="logo" href="#home">AG<span>.</span></a>
+        <div class="menu">
+            <a href="#services">الخدمات</a>
+            <a href="#projects">المشاريع</a>
+            <a href="#contact">تواصل</a>
+            <a href="#" id="langToggle" style="background: var(--line); padding: 4px 10px; border-radius: 8px;">EN</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+    <div class="container hero-grid">
+        <div data-aos="fade-left">
+            <span class="tag">
+                <span style="width:8px; height:8px; background:var(--sec); border-radius:50%; display:inline-block"></span>
+                مقرنا: الفوار، الخليل - نخدم العالم
+            </span>
+            <h1>نبني حضورًا رقميًا <br><span style="color:var(--pri)">يليق بطموحك</span></h1>
+            <p>من قلب الفوار، نقدم أحدث حلول تطوير الأنظمة وتصميم المواقع للشركات التي تبحث عن التميز والاحترافية في الشرق الأوسط.</p>
+            <div class="actions" style="display:flex; gap:15px; margin-top:35px;">
+                <a href="#projects" class="btn">عرض أعمالي</a>
+                <a href="#contact" class="btn btn-outline">استشارة مجانية</a>
+            </div>
+        </div>
+        <div class="card" data-aos="zoom-in">
+            <div class="stats">
+                <div class="stat"><h3>+50</h3><p>مشروع ناجح</p></div>
+                <div class="stat"><h3>UI</h3><p>تصميم مذهل</p></div>
+                <div class="stat"><h3>B2B</h3><p>حلول تقنية</p></div>
+                <div class="stat"><h3>24h</h3><p>دعم مستمر</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <h2 class="title" data-aos="fade-up">خدمات متكاملة</h2>
+        <p class="sub" data-aos="fade-up">نحول الأفكار المعقدة إلى واجهات بسيطة وأنظمة قوية.</p>
+        <div class="grid-3">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <div style="font-size: 2rem; margin-bottom: 15px;">💻</div>
+                <h3>تطوير المواقع</h3>
+                <p class="muted">مواقع شركات رسمية، صفحات هبوط، ومتاجر إلكترونية حديثة بأعلى معايير السرعة.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div style="font-size: 2rem; margin-bottom: 15px;">🎨</div>
+                <h3>الهوية البصرية</h3>
+                <p class="muted">تصميم شعارات وبروفايلات شركات تعكس القوة والمصداقية لعلامتك التجارية.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <div style="font-size: 2rem; margin-bottom: 15px;">⚙️</div>
+                <h3>أتمتة الأعمال</h3>
+                <p class="muted">بناء أنظمة داخلية (Dashboards) لإدارة الموظفين والعمليات والمبيعات بكفاءة.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" style="background: rgba(255,255,255,0.02)">
+    <div class="container">
+        <h2 class="title" data-aos="fade-up">أحدث المشاريع</h2>
+        <p class="sub" data-aos="fade-up">جودة التنفيذ هي عنواننا في كل مشروع نلتزم به.</p>
+        <div class="grid-3">
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-img-wrapper">
+                    <img src="./IMAGES/WCS.png" alt="AMTC">
+                </div>
+                <div class="project-info">
+                    <span class="location-badge">الاردن</span>
+                    <h3>AMTC Corporate</h3>
+                    <p class="muted">تطوير منصة متكاملة لشركة خدمات عامة.</p>
+                     <a href="https://abdel398939.github.io/AMTC-Business-Services/" target="_blank" class="project-link">زيارة الموقع</a>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-img-wrapper">
+                    <img src="./IMAGES/WPL.png" alt="MIS Interactive plan">
+                    <
+                </div>
+                <div class="project-info">
+                    <span class="location-badge">MIS PLAN</span>
+                    <h3>HR Master Dashboard</h3>
+                    <p class="muted">نظام ذكي لإدارة المسار الأكاديمي ودعم اتخاذ القرار لطلبة MIS</p>
+                        <a href="https://abdel398939.github.io/-MIS/" target="_blank" class="project-link">زيارة الموقع</a>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-img-wrapper">
+                    <img src="./IMAGES/wec.png" alt="Store">
+                </div>
+                <div class="project-info">
+                    <span class="location-badge">تجارة إلكترونية</span>
+                    <h3>Premium E-Shop</h3>
+                    <p class="muted">متجر إلكتروني متوافق مع جميع الشاشات وبوابات الدفع.</p>
+                     <a href="https://abdel398939.github.io/e-comeace/" target="_blank" class="project-link">زيارة الموقع</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="cta-box" data-aos="zoom-in">
+            <h2>هل لديك مشروع طموح؟</h2>
+            <p class="sub">أنا متواجد حالياً في <b>الفوار</b>، ومستعد لمناقشة مشروعك القادم وجهاً لوجه أو عبر الإنترنت.</p>
+            <div style="display:flex; gap:15px; justify-content:center; flex-wrap:wrap">
+                <a class="btn" style="background:#25D366; color:white" href="https://wa.me/962786610095">واتساب مباشر</a>
+                <a class="btn btn-outline" style="border-color:white; color:white" href="mailto:abdarhmanghali998@gmail.com">البريد الإلكتروني</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" style="text-align:center; padding:40px 0; border-top:1px solid var(--line)">
+    <div class="container">
+        <p>© 2026 عبد الرحمن غالي — الفوار، فلسطين. جميع الحقوق محفوظة.</p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    // تشغيل مكتبة الأنميشن
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+    });
+
+    // ترجمة بسيطة (بناءً على طلبك السابق)
+    const data = {
+        ar: { title: "نبني حضورًا رقميًا يليق بطموحك", loc: "الفوار، الخليل" },
+        en: { title: "Building a Digital Presence That Fits Your Ambition", loc: "Al Fawwar, Hebron" }
+    };
+    
+    let lang = 'ar';
+    const toggle = document.getElementById('langToggle');
+    
+    toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        lang = lang === 'ar' ? 'en' : 'ar';
+        document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+        toggle.textContent = lang === 'ar' ? 'EN' : 'AR';
+        // يمكنك إضافة باقي نصوص الترجمة هنا كما في كودك الأصلي
+    });
+</script>
+
+</body>
+</html>
